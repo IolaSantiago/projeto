@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+
+        </script>
+    </head>
+    <body>
+        <p id="myid">Exemplo 1</p>
+        <p id="myid2">Exemplo 2 <i> de texto </i>a apresentar </p>
+        <input id="txtInput" type="text" value="Iola">
+
+        <input type="text"  id="txtInput3"/>
+        <button id="btnExemplo" onclick="Teste();">Press me</button>
+        <div id="divresultado">
+
+        </div>
+    </body>
+</html>
+<script>
+    //comentario uma só linha
+    /*comentario 
+    multilinha
+    */
+   console.log(document.getElementById("myid").innerText);/*para ir buscar o interior do parágrafo*/
+   console.log(document.getElementById("myid2").innerHTML); /*para ir buscar a formatação do elemento*/
+   console.log(document.getElementById("txtInput").value);
+   console.log(document.getElementsByTagName("p"));
+   //atribuir valor
+   document.getElementById("div2").innerHTML=<a href="://www.iade.pt>link</a>"
+
+   function Teste()
+   {
+    document.getElementById("divresultado").innerText = "Olá" + document.getElementById("txtInput3").value;
+   }
+
+</script>
